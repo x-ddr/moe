@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: df -h
+        run: |
+          df -h
+          free -g
       - name: 'Set up Python'
         uses: actions/setup-python@v2
         with:
