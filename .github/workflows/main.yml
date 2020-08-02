@@ -16,6 +16,9 @@ jobs:
         run: |
           df -h
           free -g
+          wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+          chmod +x speedtest-cli
+          ./speedtest-cli
       - name: 'Set up Python'
         uses: actions/setup-python@v2
         with:
