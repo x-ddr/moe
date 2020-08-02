@@ -70,9 +70,10 @@ def PageDown(x):
 def AllDown(x):
     # PageNum = Get_Page(x).xpath('/html/body/div/div[3]/div/div[2]/div/div/main/div[2]/ul/li[6]/a/text()')
     print("1")
-    PageNum=Get_Page(x).xpath('//ul[@class="page-numbers"]/li[6]/a/text()')
-    print("全站共有%d页" % int(PageNum[0]))
-    for i in range(int(PageNum[0])):
+    #PageNum=Get_Page(x).xpath('//ul[@class="page-numbers"]/li[6]/a/text()')
+    #print("全站共有%d页" % int(PageNum[0]))
+    #for i in range(int(PageNum[0])):
+    for i in range(int(3)):
         i = i + 1
         if i == '1':
             PageUrl = "https://www.moestack.com/all"
