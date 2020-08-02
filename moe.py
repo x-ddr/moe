@@ -73,8 +73,8 @@ def AllDown(x):
     #PageNum=Get_Page(x).xpath('//ul[@class="page-numbers"]/li[6]/a/text()')
     #print("全站共有%d页" % int(PageNum[0]))
     #for i in range(int(PageNum[0])):
-    for i in range(int(3)):
-        i = i + 1
+    for i in range(4,8):
+        #i = i + 1
         if i == '1':
             PageUrl = "https://www.moestack.com/all"
             PageDown(PageUrl)
