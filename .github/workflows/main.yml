@@ -27,6 +27,11 @@ jobs:
       - name: 'Working'
         timeout-minutes: 350
         run: bash ./main.sh
+      - name: df -h2
+        run: |
+          df -h
+          ls
+          ll
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
@@ -43,6 +48,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
           args: PyImage
-      - name: df -h2
-        run: df -h
+     
      
