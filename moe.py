@@ -74,7 +74,7 @@ def AllDown(x):
     #print("全站共有%d页" % int(PageNum[0]))
     #for i in range(int(PageNum[0])):
     #12,21
-    for i in range(15,19):
+    for i in range(19,23):
         #i = i + 1
         if i == '0':
             PageUrl = "https://www.moestack.com/all"
