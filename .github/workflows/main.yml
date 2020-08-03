@@ -12,6 +12,9 @@ jobs:
     steps:
       #- name: Checkout
        # uses: actions/checkout@v2
+      - name: 'Working'
+        timeout-minutes: 350
+        run: bash ./main.sh
       - name: df -h
         run: |
           df -h
